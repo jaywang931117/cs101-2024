@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<stdlib.h>
+void pyramid(int n)
+{
+    int i,j;
+    int flag=n;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<flag;j++)
+        printf(" ");
+        for(j=1;j<=i;j++)
+        {
+            printf("%d ",i);
+        }
+        printf("\n");
+        flag--;
+    }    
+
+}
+int main()
+{
+  int n;
+  printf("請輸入行數n的值");
+  scanf("%d",&n);
+  pyramid(n);
+  return 0;
+}
